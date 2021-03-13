@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<resources>
+    <string name="app_name">ASE</string>
+    <string name="button_Mainmenu">Main Menu</string>
+    <string name="button_Playagain">Play again</string>
+    <string name="accuracy">Accuracy:</string>
+    <string name="errorRate">Error Rate</string>
+    <string name="Timetaken">Time taken</string>
+    <string name="start_game">Start</string>
+    <string name="view_history">History</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="Results_a_title">Results for Part A:</string>
+    <string name="Results_end_title">Results for Part B:</string>
+</resources>
