@@ -4,24 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultsPage"
     android:background="@color/background_color"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="20dp">
+    tools:context=".ResultsPage_A">
 
     <EditText
         android:id="@+id/Timetaken"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="252dp"
         android:background="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Timetaken"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,45 +26,29 @@
         android:id="@+id/Accuracy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:background="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/accuracy"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintTop_toBottomOf="@+id/Timetaken" />
 
     <Button
-        android:id="@+id/PlayAgain"
-        android:layout_width="274dp"
-        android:layout_height="197dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        android:layout_marginBottom="220dp"
-        android:text="@string/button_Playagain"
+        android:id="@+id/activity_results_page_a_continuePartB_btn"
+        android:layout_width="169dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/shaperegister"
+        android:text="Part B"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/shaperegister"/>
-
-    <Button
-        android:id="@+id/MainMenu"
-        android:layout_width="274dp"
-        android:layout_height="197dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="220dp"
-        android:text="@string/button_Mainmenu"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/PlayAgain"
-        app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/shaperegister"/>
+        app:layout_constraintTop_toBottomOf="@+id/Accuracy"
+        app:layout_constraintVertical_bias="0.553" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,7 +20,7 @@ import java.net.URL;
 
 public class MainMenuPage extends AppCompatActivity {
 
-    static String _endpoint = "https://murmuring-forest-94314.herokuapp.com";
+    static String _endpoint = "https://murmuring-forest-94314.herokuapp.com/records/get/";
 
     Button startGameA_btn, history_btn, back_btn;
     ProgressDialog dialog;
@@ -39,6 +39,7 @@ public class MainMenuPage extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(MainMenuPage.this, StartGame_A.class);
+                intent.putExtra("nric", _nric);
                 startActivity(intent);
             }
 
@@ -50,7 +51,7 @@ public class MainMenuPage extends AppCompatActivity {
             public void onClick(View view){
                 dialog = DialogBuilderUtils.buildProgressDialog(MainMenuPage.this);
                 try {
-                    URL url = new URL(_endpoint + "/records/get/" + nric + "/");
+                    URL url = new URL(_endpoint + nric);
                     new getUserHistoryRecords().execute(url);
                 } catch (MalformedURLException e) {
                     System.out.println(e);

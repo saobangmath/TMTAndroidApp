@@ -21,6 +21,7 @@
         <activity android:name=".HistoryPage"></activity>
         <activity android:name=".MainMenuPage"></activity>
         <activity android:name=".ResultsPage_A"></activity>
+        <activity android:name=".ResultsPage_B"></activity>
         <activity android:name=".StartGame_A"></activity>
         <activity android:name=".StartGame_B"></activity>
         <activity android:name=".DetailPage"></activity>

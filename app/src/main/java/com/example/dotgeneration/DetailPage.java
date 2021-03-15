@@ -63,7 +63,8 @@ public class DetailPage extends AppCompatActivity {
             BarData errorRateDataSet = new BarData(labels, errors);
             times.setColors(ColorTemplate.COLORFUL_COLORS);
             time_chart.setData(timeDataSet); errorRate_chart.setData(errorRateDataSet);
-            time_chart.animateY(5000);errorRate_chart.animateY(5000);
+            time_chart.setDescription("Time taken (second)"); errorRate_chart.setDescription("Error rate (%)");
+            time_chart.animateY(400);errorRate_chart.animateY(400);
             time_chart.setBorderColor(R.color.purple_200); errorRate_chart.setBorderColor(R.color.black);
         }
         catch (JSONException e) {

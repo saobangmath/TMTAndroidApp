@@ -2,16 +2,16 @@ package com.example.dotgeneration.utils;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
+
 
 public class DialogBuilderUtils {
     static public ProgressDialog buildProgressDialog(Context ctx){
         ProgressDialog progressDialog =  ProgressDialog.show(ctx, "", "Loading...", true);
         TextView messageView = progressDialog.findViewById(android.R.id.message);
-        messageView.setTextSize(50);
+        messageView.setTextSize(100);
         return progressDialog;
     }
     static public AlertDialog getCommonDialog(Context ctx){
